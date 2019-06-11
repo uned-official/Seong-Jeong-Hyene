@@ -1,0 +1,68 @@
+@charset "uft-8";
+
+@media screen and (max-width: 765px){
+    /* total layout */
+    #main > section{width: 100%; height: Calc(100vh - 80px); margin-top: 80px;}
+    #page-indicator {display: none;}
+    
+    /* firstpage - index */
+    section#firstpage .inner-box {position: relative; top: 50%; transform: translateY(-50%); width: 80%; height: 90%; margin: 0 auto; font-family: 'Oswald', sans-serif; background: #3535af;}
+    section#firstpage .inner-box h2{font-size: 80px; color: white; letter-spacing: 10px;}
+    section#firstpage .inner-box p {margin-top: 250px; color: white; letter-spacing: 4px; text-align: right;}
+    
+    /* page 2 - pilly */
+    section#pilly .pic img{position: absolute; top: 20%; left: 55%; transform: translate(-50%, -50%);}
+    section#pilly .info-box{position: absolute; left: 0; bottom: 0; width: 100%; height: 58%; text-align: center; color: white;}
+    section#pilly .info{position: relative;}
+    section#pilly .info h4:before{position: absolute; top: 5px; left: -60px; content: "02"; font-size: 30px; font-weight: 700;}
+    section#pilly .info h4{position: absolute; top: 0; left: 50%; font-size: 24px; letter-spacing: 2px; margin-bottom: 30px;}
+    section#pilly .info h4 span{font-weight: 300; font-size: 14px; letter-spacing: 1.2px;}
+    section#pilly .info ul{position: absolute; top: 70px; left: 50%; transform: translateX(-50%);}
+    section#pilly .info li{font-size: 14px; letter-spacing: 2px; margin: 15px 0;}
+    section#pilly .info li p{font-size: 14px; margin-top: 10px; letter-spacing: 1.4px; line-height: 1.4;}
+    section#pilly .btn-more{position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); width: 90%;}
+    section#pilly .btn-more .img-more{left: 50%; transform: translateX(-50%);}
+    section#pilly .img-more:before{background: rgba(255, 197, 41, 0.5);}
+    section#pilly .img-more:hover:before{background: rgb(255, 197, 41);}
+    
+    /* page 3 - air na*/
+    section#airna .pic img{width: 90%; position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%);}
+    section#airna .info-box{position: absolute; left: 0; bottom: 0; width: 100%; height: 58%; text-align: center; color: white;}
+    section#airna .info{position: relative;}
+    section#airna .info h4:before{position: absolute; top: 5px; left: -60px; content: "02"; font-size: 30px; font-weight: 700;}
+    section#airna .info h4{position: absolute; top: 0; left: 40%; font-size: 24px; letter-spacing: 2px; margin-bottom: 30px;}
+    section#airna .info h4 span{font-weight: 300; font-size: 14px; letter-spacing: 1.2px;}
+    section#airna .info ul{position: absolute; top: 70px; left: 50%; transform: translateX(-50%);}
+    section#airna .info li{font-size: 14px; letter-spacing: 2px; margin: 15px 0;}
+    section#airna .info li p{font-size: 14px; margin-top: 10px; letter-spacing: 1.4px; line-height: 1.4;}
+    section#airna .btn-more{position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); width: 90%;}
+    section#airna .btn-more .img-more{left: 50%; transform: translateX(-50%);}
+    
+    /* page 4 - 달구포차 */
+    section#dalgu .pic img{position: absolute; top: 5%; left: 50%; transform: translateX(-50%); width: 95%;}
+    section#dalgu .info{position: absolute; bottom: 13%; left: 0; width: 100%; padding-left: 30px; color: #333333;}
+    section#dalgu .info h4:before{content: "03"; font-size: 30px; font-weight: 700; display: block; margin-bottom: 15px;}
+    section#dalgu .info h4{font-size: 24px; letter-spacing: 2px; margin-bottom: 20px;}
+    section#dalgu .info h4 span{display: none;}
+    section#dalgu .info li p{font-size: 14px; margin-top: 8px; letter-spacing: 1.4px;}
+    section#dalgu .info li{margin-bottom: 20px; font-size: 14px; letter-spacing: 2px;}
+    section#dalgu .btn-more{position: absolute; bottom: 5%; left: 5%;}
+    
+    /* page 5 - gallery */
+    h3{font-family: 'Oswald', sans-serif; color: #3535af; font-size: 40px; letter-spacing: 2px; text-align-last: center; margin-top: 100px}
+    div.image-slide {position: relative; margin: 0 auto; width: 100%; height: 100%;}
+    div.image-slide > div.box {position: absolute; left: 0; top: 55%; transform: translateY(-50%); width: 100%; height: 100%; overflow: hidden;}
+    div.image-slide ul.indicator {position: absolute; top: 55%; right: 0; width: 100%; text-align: center; }
+    
+    /* lastpage - contact*/
+    section#contact .inner-box{position: relative; top: 50%; transform: translateY(-50%); width: 80%; height: 90%; margin: 0 auto; font-family: 'Oswald', sans-serif; background: #3535af;}
+    section#contact .infotext{position: absolute; bottom: 70px; right: 0;}
+    section#contact .infotext a{border-bottom: 1px solid white;}
+    section#contact .inner-box h2{font-size: 80px; color: white; letter-spacing: 10px;}
+    section#contact .inner-box p{margin: 5px 0; color: white; letter-spacing: 4px; text-align: right;}
+    
+     /* btn_more */
+    .img-more{position: relative; float: left; margin: 10px 25px 0 0; padding: 15px 22px; transition: all .2s ease;}
+    .img-more:before{position: absolute; top: 0; left: 0; content: ""; display: block; width: 46px; height: 46px; background: rgba(255, 171, 157, 0.5); border-radius: 28px; transition: all 0.3s ease;}
+    .img-more span{position: relative; font-size: 14px; letter-spacing: 0.25em; line-height: 18px; vertical-align: middle; text-transform: uppercase;}
+}
