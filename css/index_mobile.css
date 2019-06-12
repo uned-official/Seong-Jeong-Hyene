@@ -2,8 +2,8 @@
 
 @media screen and (max-width: 765px){
     /* total layout */
-    #wrap{background: red;}
-    #main{background: gold;}
+    #main {position: absolute; left: 0; top: 0; width: 100vw; height: 100%; background: gold;}
+    section.scroll-page {position: absolute; left: 0; top: 0; }
     #main > section{width: 100%; height: 700px; background: pink;}
     #page-indicator {display: none;}
     
@@ -21,6 +21,7 @@
     section#firstpage .inner-box p {position: absolute; bottom: 20px; right: 0; color: white; letter-spacing: 4px; text-align: right;}
     
     /* page 2 - pilly */
+    section#pilly .pic{background: url(../img/index_pilly_00.png) no-repeat; width: 100%; height: 100%;}
     section#pilly .pic img{position: absolute; top: 20%; left: 55%; transform: translate(-50%, -50%);}
     section#pilly .info-box{position: absolute; left: 0; bottom: 0; width: 100%; height: 58%; text-align: center; color: white;}
     section#pilly .info{position: relative;}
@@ -36,6 +37,7 @@
     section#pilly .img-more:hover:before{background: rgb(255, 197, 41);}
     
     /* page 3 - air na*/
+    section#airna .pic{background: url(../img/index_airna_00.png) no-repeat; width: 100%; height: 100vh;}
     section#airna .pic img{width: 90%; position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%);}
     section#airna .info-box{position: absolute; left: 0; bottom: 0; width: 100%; height: 58%; text-align: center; color: white;}
     section#airna .info{position: relative;}
@@ -47,8 +49,11 @@
     section#airna .info li p{font-size: 14px; margin-top: 10px; letter-spacing: 1.4px; line-height: 1.4;}
     section#airna .btn-more{position: absolute; bottom: 5%; left: 50%; transform: translateX(-50%); width: 90%;}
     section#airna .btn-more .img-more{left: 50%; transform: translateX(-50%);}
+    section#airna .img-more:before{background: rgba(53, 53, 175, 0.5);}
+    section#airna .img-more:hover:before{background: rgb(53, 53, 175);}
     
     /* page 4 - 달구포차 */
+    section#dalgu .pic{position: relative; background: url(../img/index_dalgu_00.png) no-repeat; width: 100%; height: 100%;}
     section#dalgu .pic img{position: absolute; top: 5%; left: 50%; transform: translateX(-50%); width: 95%;}
     section#dalgu .info{position: absolute; bottom: 13%; left: 0; width: 100%; padding-left: 30px; color: #333333;}
     section#dalgu .info h4:before{content: "03"; font-size: 30px; font-weight: 700; display: block; margin-bottom: 15px;}
@@ -57,6 +62,8 @@
     section#dalgu .info li p{font-size: 14px; margin-top: 8px; letter-spacing: 1.4px;}
     section#dalgu .info li{margin-bottom: 20px; font-size: 14px; letter-spacing: 2px;}
     section#dalgu .btn-more{position: absolute; bottom: 5%; left: 5%;}
+    section#dalgu .img-more:before{background: rgba(170, 170, 170, 0.5);}
+    section#dalgu .img-more:hover:before{background: rgb(170, 170, 170);}
     
     /* page 5 - gallery */
     h3{font-family: 'Oswald', sans-serif; color: #3535af; font-size: 40px; letter-spacing: 2px; text-align-last: center; margin-top: 100px}
@@ -64,6 +71,14 @@
     div.image-slide > div.box {position: absolute; left: 0; top: 55%; transform: translateY(-50%); width: 100%; height: 100%; overflow: hidden;}
     div.image-slide ul.indicator {position: absolute; bottom: 10px; right: 0; width: 100%; text-align: center;}
     div.image-slide ul.indicator li a {display: block; width: 10px; height: 10px; border: 1px solid white; border-radius: 20px; overflow: hidden; text-indent: -999px;}
+    div.image-slide ul.slide {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+    div.image-slide ul.slide li {position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: none;}
+    div.image-slide ul.slide li:first-child {display: block;}
+    div.image-slide ul.slide li > a {display: block;}
+    div.image-slide ul.indicator li {display: inline-block;}
+    div.image-slide ul.indicator li + li {margin-left: 3px;}
+    div.image-slide ul.indicator li.on a {background: black;}
+    div.image-slide p.control a.prev, div.image-slide p.control a.next {display: none;}
 
     /* lastpage - contact*/
     section#contact .inner-box{position: relative; top: 50%; transform: translateY(-50%); width: 80%; height: 80%; margin: 0 auto; font-family: 'Oswald', sans-serif; background: #3535af;}
@@ -72,8 +87,18 @@
     section#contact .inner-box h2{font-size: 80px; color: white; letter-spacing: 10px;}
     section#contact .inner-box p{margin: 5px 0; color: white; letter-spacing: 4px; text-align: right;}
     
+    /* indicator */
+    #page-indicator {position: fixed; right: 60px; top: 100px; transform: translate(0, -50%); z-index: 10000;}
+    #page-indicator li + li {margin-top: 15px;}
+    #page-indicator li a {display: block; width: 10px; height: 10px; border: 1px solid black; border-radius: 20px; overflow: hidden;}
+    #page-indicator li.on a {background: black;}
+    
      /* btn_more */
     .img-more{position: relative; float: left; margin: 10px 25px 0 0; padding: 15px 22px; transition: all .2s ease;}
     .img-more:before{position: absolute; top: 0; left: 0; content: ""; display: block; width: 46px; height: 46px; background: rgba(255, 171, 157, 0.5); border-radius: 28px; transition: all 0.3s ease;}
     .img-more span{position: relative; font-size: 14px; letter-spacing: 0.25em; line-height: 18px; vertical-align: middle; text-transform: uppercase;}
+    .img-more:hover:before{width: 100%; background: #FFAB9D;}
+    .img-more:hover svg{transform: translateX(0);}
+    .img-more:active{transform: scale(.96);}      
+    .img-more svg{position: relative; top: 0; transform: translateX(-5px); margin-left: 10px; fill: none; stroke-linecap: round; stroke-linejoin: round; stroke: white; stroke-width: 2; transition: all .3s ease;}
 }
