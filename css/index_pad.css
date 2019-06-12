@@ -54,6 +54,7 @@
     div.image-slide {position: relative; margin: 0 auto; width: 700px; height: 100%;}
     div.image-slide > div.box {position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden;}
     div.image-slide ul.indicator {position: absolute; top: 77%; right: 0; width: 100%; text-align: center;}
+    div.image-slide ul.indicator li a {display: block; width: 10px; height: 10px; border: 1px solid black; border-radius: 20px; overflow: hidden; text-indent: -999px;}
 
     /* lastpage - contact*/
     section#contact .inner-box{position: relative; width: 80%; height: 70%; top: 50%; transform: translateY(-50%); margin: 0 auto; font-family: 'Oswald', sans-serif; background: #3535af;}
