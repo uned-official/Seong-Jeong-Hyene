@@ -2,6 +2,7 @@
 
 @media screen and (max-width: 765px){
     /* total layout */
+    #wrap {position: relative; width: 100vw; height: 100vh;}
     #main > section{width: 100%; height: Calc(100vh - 80px); margin-top: 80px;}
     #page-indicator {display: none;}
     
