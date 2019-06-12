@@ -3,7 +3,7 @@
 @media screen and (max-width: 765px){
     /* total layout */
     #wrap {position: relative; width: 100vw; height: 100vh;}
-    #main > section{width: 100%; height: 100%;}
+    #main > section{width: 100%; height: 90%;}
     #page-indicator {display: none;}
     
     /* firstpage - index */
@@ -57,7 +57,6 @@
     div.image-slide ul.indicator {position: absolute; bottom: 0; right: 0; width: 100%; text-align: center; }
     
     /* lastpage - contact*/
-    section#contact{margin-top: 40px;}
     section#contact .inner-box{position: relative; top: 50%; transform: translateY(-50%); width: 80%; height: 80%; margin: 0 auto; font-family: 'Oswald', sans-serif; background: #3535af;}
     section#contact .infotext{position: absolute; bottom: 70px; right: 0;}
     section#contact .infotext a{border-bottom: 1px solid white;}
