@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* Total Layout */
-#wrap{width: Calc(100vw-150px); height: 100%;}
+#wrap{width: Calc(100vw-150px); height: 100%; width: 100%;}
 #skip-nav {position: fixed; left: 0; top: -41px; width: 100%; line-height: 40px; text-align: center; font-size: 16px; color: #ffffff; background: rgba(0, 0, 0, 0.6); border-bottom: 1px solid #ffffff; z-index: 100000; transition: top 0.3s;}
 #skip-nav:focus {top: 0;}
 
