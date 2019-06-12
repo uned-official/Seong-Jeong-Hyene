@@ -13,22 +13,38 @@
     
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/ui_library_common.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/header_mobile.js"></script>
     
     <title>달구포차 | 성 정현</title>
 </head>
 <body>
     <div id="wrap">
         <header id="header">
-            <h1><a href="../index.html"><img src="../img/img_logo.png" alt="성정현"></a></h1>
-            <nav id="gnb">
-                <ul>
-                    <li><a href="#page2" class="menu">PROJECT</a></li>
-                    <li><a href="#page7" class="menu">GALLERY</a></li>
-                    <li><a href="https://seongjeonghyene.tistory.com/" class="menu" target="_blank">STUDY</a></li>
-                    <li><a href="#lastpage" class="menu">CONTACT</a></li>
-                </ul>
-            </nav>
+            <a href="#main" id="skip-nav">본문 바로가기</a>
+                <h1><a href="../index.html"><img src="../img/img_logo.png" alt="성정현"></a></h1>          
+                <a href="javascript;:" class="nav-bar">
+                    <span class="item"></span>
+                    <span class="item"></span>
+                    <span class="item"></span>
+                </a>
+                <nav>
+                    <nav id="gnb-web">
+                        <ul>
+                            <li><a href="#pilly" class="menu">PROJECT</a></li>
+                            <li><a href="#gallery" class="menu">GALLERY</a></li>
+                            <li><a href="https://seongjeonghyene.tistory.com/" class="menu" target="_blank">STUDY</a></li>
+                            <li><a href="#contact" class="menu">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                    <nav id="gnb-mobile">
+                        <ul class="gnb-list">
+                            <li><a href="#pilly" class="menu">PROJECT</a></li>
+                            <li><a href="#gallery" class="menu">GALLERY</a></li>
+                            <li><a href="https://seongjeonghyene.tistory.com/" class="menu">STUDY</a></li>
+                            <li><a href="#contact" class="menu">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </nav>
         </header>
         <main id="main">
             <h3>VIEW DESIGN</h3>
