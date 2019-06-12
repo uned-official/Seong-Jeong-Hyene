@@ -2,11 +2,10 @@
 
 @media screen and (max-width: 765px){
     /* total layout */
-    #main > section{outline: 3px solid red;}
     #page-indicator {display: none;}
     
     /* firstpage - index */
-    section#firstpage .inner-box {position: relative; top: 50%; transform: translateY(-50%); width: 80%; height: 80%; margin: 0 auto; font-family: 'Oswald', sans-serif; background: #3535af;}
+    section#firstpage .inner-box {position: relative; top: 50%; transform: translateY(-50%); width: 80%; height: 80%; margin: 0 auto; font-family: 'Oswald', sans-serif; background: #3535af; border-bottom: 5px solid red;}
     section#firstpage .inner-box h2{font-size: 80px; color: white; letter-spacing: 10px;}
     section#firstpage .inner-box p {position: absolute; bottom: 20px; right: 0; color: white; letter-spacing: 4px; text-align: right;}
     
