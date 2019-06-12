@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 765px){
     /* total layout */
-    #wrap {width: 100vw; height: 100vh;}
+    #main > section{outline: 3px solid red;}
     #page-indicator {display: none;}
     
     /* firstpage - index */
