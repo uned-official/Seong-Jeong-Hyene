@@ -1,6 +1,6 @@
 // JavaScript Document
 $(function() {
-    setParallaxNoBar('.scroll-page');
+    //setParallaxNoBar('.scroll-page');
     function setParallaxNoBar(selector) {
         var numPage = $(selector).length;
         var pagePrev = 0;
