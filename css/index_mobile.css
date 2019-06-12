@@ -2,17 +2,11 @@
 
 @media screen and (max-width: 765px){
     /* total layout */
-    #main {position: absolute; left: 0; top: 0; width: 100vw; height: 100%; background: gold;}
+    #wrap {position: relative; overflow: hidden; width: 100vw; height: 100vh;}
+    #main {position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: gold;}
     section.scroll-page {position: absolute; left: 0; top: 0; }
     #main > section{width: 100%; height: 700px; background: pink;}
     #page-indicator {display: none;}
-    
-    
-    #header{display: none;}
-    
-    
-    
-    
     
     /* firstpage - index */
     section#firstpage {margin-top: 80px;}
@@ -37,7 +31,7 @@
     section#pilly .img-more:hover:before{background: rgb(255, 197, 41);}
     
     /* page 3 - air na*/
-    section#airna .pic{background: url(../img/index_airna_00.png) no-repeat; width: 100%; height: 100vh;}
+    section#airna .pic{background: url(../img/index_airna_00.png) no-repeat; width: 100%; height: 100%;}
     section#airna .pic img{width: 90%; position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%);}
     section#airna .info-box{position: absolute; left: 0; bottom: 0; width: 100%; height: 58%; text-align: center; color: white;}
     section#airna .info{position: relative;}
