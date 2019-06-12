@@ -27,7 +27,7 @@ $(function() {
         });
 
         // 마우스 휠
-        /*window.addEventListener(eventScroll, function(e) {
+        window.addEventListener(eventScroll, function(e) {
             e.preventDefault();
             clearTimeout(timerId);
             timerId = setTimeout(function() {isWheelBlocked = false;}, 200);
@@ -46,7 +46,7 @@ $(function() {
                 showPage(pagePrev);
             }
         }, {passive: false});
-*/
+        
         // focusin 이벤트
         $('.scroll-page').on('focusin', function() {
             var index = $('.scroll-page').index($(this));
