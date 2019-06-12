@@ -3,7 +3,7 @@
 @media screen and (max-width: 765px){
     /* total layout */
     #wrap {position: relative; width: 100vw; height: 100vh;}
-    #main {position: absolute; left: 0; top: 0; width: 100%; height: 100%;}
+    #main {position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: pink;}
     #page-indicator {display: none;}
     #main > section{width: 100%; height: 100%;}
     section.scroll-page {position: absolute; left: 0; top: 0;}
