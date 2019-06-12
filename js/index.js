@@ -78,7 +78,7 @@ $(function() {
 
     showSlide(1);
 
-    $('div.image-slide ul.indicator li a').on('click ', function() {
+    $('div.image-slide ul.indicator li a').on('click', function() {
         var index = $('div.image-slide ul.indicator li').index($(this).parent());
         showSlide(index + 1);
     });
