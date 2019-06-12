@@ -54,7 +54,7 @@
     h3{font-family: 'Oswald', sans-serif; color: #3535af; font-size: 40px; letter-spacing: 2px; text-align-last: center; margin-top: 100px}
     div.image-slide {position: relative; margin: 0 auto; width: 100%; height: 55%;}
     div.image-slide > div.box {position: absolute; left: 0; top: 55%; transform: translateY(-50%); width: 100%; height: 100%; overflow: hidden;}
-    div.image-slide ul.indicator {position: absolute; bottom: 0; right: 0; width: 100%; text-align: center; }
+    div.image-slide ul.indicator {position: absolute; bottom: 10px; right: 0; width: 100%; text-align: center;}
     div.image-slide ul.indicator li a {display: block; width: 10px; height: 10px; border: 1px solid white; border-radius: 20px; overflow: hidden; text-indent: -999px;}
 
     /* lastpage - contact*/
