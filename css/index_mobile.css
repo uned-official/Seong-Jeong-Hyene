@@ -52,9 +52,9 @@
     
     /* page 5 - gallery */
     h3{font-family: 'Oswald', sans-serif; color: #3535af; font-size: 40px; letter-spacing: 2px; text-align-last: center; margin-top: 100px}
-    div.image-slide {position: relative; margin: 0 auto; width: 100%; height: 52%;}
-    div.image-slide > div.box {position: absolute; left: 0; top: 55%; transform: translateY(-50%); width: 100%; height: 100%; overflow: hidden;}
-    div.image-slide ul.indicator {position: absolute; bottom: -10px; right: 0; width: 100%; text-align: center; }
+    div.image-slide {position: relative; margin: 0 auto; width: 100%; height: 55%;}
+    div.image-slide > div.box {position: absolute; left: 0; top: 55%; transform: translateY(-50%); width: 100%; height: 100%; overflow: hidden; background: gold; outline: 1px solid red;}
+    div.image-slide ul.indicator {position: absolute; bottom: 5%; right: 0; width: 100%; text-align: center; }
     
     /* lastpage - contact*/
     section#contact .inner-box{position: relative; top: 50%; transform: translateY(-50%); width: 80%; height: 80%; margin: 0 auto; font-family: 'Oswald', sans-serif; background: #3535af;}
